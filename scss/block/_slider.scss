@@ -3,3 +3,8 @@
     text-align: center;
     background-image: url('/img/slider_bkg.png');
 }
+@media (max-width:1240px) {
+    .slider {
+        display: none;
+    }
+}
