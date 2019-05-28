@@ -2,7 +2,6 @@
     display: flex;
     @include WTOC();
     padding-top: 30px;
-    font-family: 'PTSans-Regular', 'AdobeInvisFont', 'MyriadPro-Regular';
     &-nav {
         background-color: $main_color;
         display: block;

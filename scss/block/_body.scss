@@ -1,7 +1,11 @@
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;;
     font-size: 14pt;
     line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 html, body {
     margin: 0;
