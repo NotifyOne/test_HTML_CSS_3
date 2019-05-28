@@ -9,7 +9,6 @@
     
         a {
             text-decoration: none;
-            color: $white;
 
             &:hover {
                 text-decoration-line: underline;
@@ -21,11 +20,9 @@
             display: flex;
             justify-content: center;
             li:after {
-                color: $white;
                 content: '\00a0|\00a0';
             }
             li.last:after {
-                color: $white;
                 content: '';
             }
         }
