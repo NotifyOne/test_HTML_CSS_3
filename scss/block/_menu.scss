@@ -2,7 +2,7 @@
     background-color: $main_color;
     margin: 0;
     padding: 0 $idents;
-    font-size: 20pt;
+    font-size: 25pt;
     &-links {
         @include WTOC();
         padding: 27px 0;

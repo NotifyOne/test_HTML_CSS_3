@@ -8,12 +8,10 @@ body {
     color: $white;
 }
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
 }
-h3, p, h2 {
+html, body, h3, p, h2, ul {
     margin: 0;
     padding: 0;
 }
