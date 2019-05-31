@@ -94,7 +94,8 @@
 	&-pager {
 		margin: 0 auto;
 		margin-top: 32px;
-		width: fit-content;
+        // width: fit-content;
+        text-align: center;
 
 		ul {
 			li {
