@@ -1,0 +1,64 @@
+.featback {
+    width: 466px;
+    // height: 578px;
+    position: fixed;
+    background-color: $white;
+    top: 5%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    form {
+        text-align: center;
+        h2 {
+            color: $featback_color;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+        p {
+            color: $featback_color;
+            margin-top: 20px;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        input[type=text],
+        input[type=email],
+        input[type=tel] {
+            width: 340px;
+            height: 40px;
+        }
+        textarea {
+            width: 340px;
+            height: 140px;
+        }
+        input[type=submit] {
+            width: 128px;
+            height: 42px;
+            margin-top: 22px;
+            margin-bottom: 26px;
+            border: none;
+            background-color: $main_color;
+        }
+    }
+    img {
+        width: 15px;
+        height: 15px;
+        background-color: $main_color;
+        padding: 6px;
+        position: relative;
+        left:100%;
+        top:-27px;
+    }
+    &-wrap {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 7;
+        &:target {
+            display: block;
+        }
+    }
+}
