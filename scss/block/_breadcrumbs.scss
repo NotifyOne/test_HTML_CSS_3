@@ -1,0 +1,5 @@
+.breadcrumbs {
+    color: $main_color;
+    @include WTOC();
+    margin-top: 10px;
+}

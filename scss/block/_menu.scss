@@ -1,6 +1,7 @@
 .menu {
     background-color: $main_color;
     margin: 0;
+    margin-bottom: auto;
     padding: 0 $idents;
     font-size: 25pt;
     &-links {

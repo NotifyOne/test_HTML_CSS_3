@@ -1,7 +1,8 @@
 .content {
     display: flex;
     @include WTOC();
-    padding-top: 30px;
+    padding-top: 26px;
+    margin-bottom: auto;
     &-nav {
         background-color: $main_color;
         display: block;
