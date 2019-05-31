@@ -4,34 +4,43 @@
     padding-top: 26px;
     margin-bottom: auto;
     &-nav {
-        background-color: $main_color;
+        color: $main_color;
         display: block;
-        width: 350px;
+        width: 178px;
         min-height: 560px;
         padding-top: 30px;
-        padding-left: 36px;
-        h3 {
-            font-size: 35pt;
-            margin-bottom: 10px;
-        }
+        overflow: hidden;
         ul {
-            padding: 0;
-            width: 265px;
             li {
-                list-style: none;
-                padding: 15px 0;
-                p {
-                    font-size: 10pt;
-                    font-weight: bold;
-                    span {
-                        display: block;
-                        font-style: italic;
-                        font-weight: normal;
+                &.select {
+                    text-decoration: underline;
+                }
+                & ul {
+                    text-decoration: none;
+                    list-style-type: disc;
+                    li {
+                        text-decoration: none;
+                        font-size: 0.7em;
+                        margin-left: 25px;
+                        &.select {
+                            font-weight: bold;
+                        }
                     }
                 }
-                a {
-                    float: right;
-                }
+            }
+        }
+        &--link {
+            margin-top: 110px;
+            margin-left: 15px;
+            img {
+                margin-left: 25px;
+            }
+            a.price-list {
+                // text-align: center;
+                color: $black;
+                font-weight: bold;
+                font-size: 23pt;
+                text-decoration: none;
             }
         }
     }
