@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var cleanCSS = require('gulp-clean-css');
-var sourcemaps = require('gulp-sourcemaps');
+// var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', async function(){
 	gulp.src('./scss/**/*.scss')
