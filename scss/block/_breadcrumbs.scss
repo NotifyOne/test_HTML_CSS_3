@@ -2,4 +2,7 @@
     color: $main_color;
     @include WTOC();
     margin-top: 10px;
+    span {
+        text-decoration: underline;
+    }
 }
