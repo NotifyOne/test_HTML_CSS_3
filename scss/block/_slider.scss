@@ -1,7 +1,9 @@
 .slider {
-    margin: 0 auto;
-    text-align: center;
     background-image: url('/img/slider_bkg.png');
+    img {
+        margin: 0 auto;
+        display: block;
+    }
 }
 @media (max-width:1240px) {
     .slider {
