@@ -1,12 +1,31 @@
 .slider {
-    background-image: url('/img/slider_bkg.png');
-    img {
-        margin: 0 auto;
-        display: block;
+	width: 1248px;
+	margin: 0 auto;
+    
+    &-wrap {
+        width: 100%;
+        background-image: url("/img/slider_bkg.png");
+        background-size: cover;
+        position: relative;
+	}
+}
+.buttons {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.arrow {
+    &-left {
+        right: 80%;
+    }
+    &-right {
+        left: 80%;
     }
 }
-@media (max-width:1240px) {
-    .slider {
-        display: none;
-    }
+@media (max-width: 1240px) {
+	.slider {
+		display: none;
+	}
 }

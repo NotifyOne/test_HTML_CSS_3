@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/main.css">
     <title>HTML1 test v2</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 </head>
 
 <body>
@@ -36,8 +41,14 @@
             </ul>
         </div>
     </menu>
-    <div class="slider">
-        <img src="img/slider.png" alt="Slider" width="1248px" height="462px">
+    <div class="slider-wrap">
+        <img src="/img/arrow-left.png" alt="" class="buttons arrow-left">
+        <div class="slider">
+            <img src="img/slider.png" alt="Slider" width="1248px" height="462px">
+            <img src="img/slider.png" alt="Slider" width="1248px" height="462px">
+            <img src="img/slider.png" alt="Slider" width="1248px" height="462px">
+        </div>
+        <img src="/img/arrow-right.png" alt="" class="buttons arrow-right">
     </div>
     <div class="breadcrumbs">
         Главная / Каталог / Бытовая техника
@@ -121,8 +132,15 @@
             </div>
             <hr>
             <div class="content-about">
-                <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
-                <p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+                <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более
+                    чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив
+                    состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для
+                    этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
+                <p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной
+                    момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При
+                    этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные
+                    разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под
+                    руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
             </div>
         </content>
     </content>
@@ -149,6 +167,14 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').slick({
+                prevArrow: $('.arrow-left'),
+                nextArrow: $('.arrow-right')
+            });
+        });
+    </script>
 </body>
 
 </html>
