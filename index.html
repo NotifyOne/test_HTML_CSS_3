@@ -44,9 +44,10 @@
     <div class="slider-wrap">
         <img src="/img/arrow-left.png" alt="" class="buttons arrow-left">
         <div class="slider">
-            <img src="img/slider.png" alt="Slider" width="1248px" height="462px">
-            <img src="img/slider.png" alt="Slider" width="1248px" height="462px">
-            <img src="img/slider.png" alt="Slider" width="1248px" height="462px">
+            <img src="img/slide-1.png" alt="Slider" width="1248px" height="462px">
+            <img src="img/slide-2.png" alt="Slider" width="1248px" height="462px">
+            <img src="img/slide-1.png" alt="Slider" width="1248px" height="462px">
+            <img src="img/slide-2.png" alt="Slider" width="1248px" height="462px">
         </div>
         <img src="/img/arrow-right.png" alt="" class="buttons arrow-right">
     </div>
@@ -170,6 +171,9 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('.slider').slick({
+                fade: true,
+                autoplaySpeed: 4000,
+                autoplay: true,
                 prevArrow: $('.arrow-left'),
                 nextArrow: $('.arrow-right')
             });
