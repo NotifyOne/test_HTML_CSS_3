@@ -44,20 +44,85 @@
             }
         }
     }
-    &-content {
-        width: 569px;
-        margin-left: 59px;
-        color: $main_color;
-        h2 {
-            margin: 20px 0;
-            font-size: 25pt;
-            font-style: normal;
+    &-shopping {
+        margin-left: 22px;
+        width: 780px;
+        &--wrap {
+            width: 780px;
+            color: $price-color;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: normal;
         }
+
+        &-buy {
+            box-sizing: border-box;
+            padding: 20px;
+            display: block;
+            height: 380px;
+            width: 250px;
+            background-color: $buy_bkg_color;
+            margin: 7.5px;
+            h4 {
+                margin-top: 21px;
+                margin-bottom: 50px;
+            }
+            &--buy {
+                .price {
+                    color: $black;
+                    float: left;
+                    font-weight: bold;
+                    font-size: 20pt;
+                }
+                a {
+                    float: right;
+                }
+            }
+            &:nth-child(1), &:nth-child(3n+1) {
+                margin-left: 0;
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+        
+    }
+    &-pager {
+        margin: 0 auto;
+        margin-top: 32px;
+        width: fit-content;
+
+        ul {
+            li {
+                display: inline-block;
+                a {
+                    color: $buy_bkg_color;
+                    text-decoration: none;
+                }
+                &.select {
+                    font-size: 1.2em;
+                    a {
+                        color: $black; 
+                    }
+                }
+            }
+        }
+
+    }
+    hr {
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: $hr_color;
+    }
+    &-about {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 202px;
         p {
-            margin: 20px 0;
-            font-size: 10pt;
-            text-align: justify;
-            text-justify: inter-word;
+            width: 45%;
+            color: $main_color;
+            font-size: 11pt;
         }
     }
 }
