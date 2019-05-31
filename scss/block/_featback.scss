@@ -60,5 +60,10 @@
         &:target {
             display: block;
         }
+        #close-after-area {
+            a {
+                padding: 100vh 100vw;
+            }
+        }
     }
 }
